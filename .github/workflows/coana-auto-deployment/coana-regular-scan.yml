@@ -16,7 +16,7 @@ on:
       distinct_id:
 
 jobs:
-  if: true
+  if: false
   coana-vulnerability-analysis:
     runs-on: ubuntu-latest
 
