@@ -16,9 +16,10 @@ on:
       distinct_id:
 
 jobs:
-  # Toggles scanning on/off. Managed through the Coana dashboard.
-  if: true
   coana-vulnerability-analysis:
+    # Toggles scanning on/off. Managed through the Coana dashboard.
+    if: true
+
     runs-on: ubuntu-latest
 
     steps:
