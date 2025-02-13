@@ -1,0 +1,11 @@
+name: 'My composite action'
+description: 'Testing composite action'
+
+runs:
+  using: "composite"
+
+  steps:
+    - run: echo "Hello $TEST_NAME"
+      shell: bash
+      env:
+          TEST_NAME: ${{ secrets.TEST_NAME }}
