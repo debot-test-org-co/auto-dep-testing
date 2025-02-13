@@ -1,0 +1,9 @@
+name: 'My composite action'
+description: 'Testing composite action'
+
+runs:
+  using: "composite"
+
+  steps:
+    - run: echo "Hello Coana"
+      shell: bash
