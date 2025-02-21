@@ -28,9 +28,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Custom setup
-        uses: ./.github/actions/setup
+        uses: actions/something-wicked@v2
         with:
-          name: Luke
+          hello: WORLD
 
       - name: Run Coana CLI
         id: coana-cli
