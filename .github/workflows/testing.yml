@@ -1,0 +1,26 @@
+name: Testing
+
+on:
+
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Lorem Ipsum ...'
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install
+        working-directory: ./vulnerable-project
+        run: npm install
+  
+      - name: Run test
+        working-directory: ./vulnerable-project
+        run: npm run test
+          
