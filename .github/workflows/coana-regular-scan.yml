@@ -19,7 +19,7 @@ on:
 jobs:
   coana-vulnerability-analysis:
     # Toggles scanning on/off. Managed through the Coana dashboard.
-    if: true
+    if: false
 
     runs-on: ubuntu-latest
 
