@@ -23,9 +23,18 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      test: test
+      hello: ${{secrets.WORLD}}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Custom setup
+        uses: ./.github/actions/setup
+        with:
+          hello: world
 
       - name: Run Coana CLI
         id: coana-cli
